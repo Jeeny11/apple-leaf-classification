@@ -1,12 +1,16 @@
-%%writefile app.py
+%%writefile streamlit_app.py
 import streamlit as st
 import tensorflow as tf
 import streamlit as st
 
 
+
+
+#DIR_MODEL='/content/drive/MyDrive/Master/TFM/Data/Models/'
+
+model_file ='/content/drive/MyDrive/Master/TFM/Data/Models/InceptionV3_model.h5'
+
 @st.cache(allow_output_mutation=True)
-DIR_MODEL=''
-model_file =DIR_MODEL+'InceptionV3_model.h5'
 def load_model():
   model=tf.keras.models.load_model(model_file)
   return model
