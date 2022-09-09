@@ -1,4 +1,3 @@
-%%writefile streamlit_app.py
 import streamlit as st
 import tensorflow as tf
 import streamlit as st
